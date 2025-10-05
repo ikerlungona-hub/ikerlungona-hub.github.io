@@ -1,0 +1,209 @@
+<!doctype html>
+<!-- El contenido de la página está en español-->
+<html lang="es">
+  <!-- Encabezado -->
+  <head>
+    <!-- Se permite usar carácteres especiales como acentos y símbolos  -->
+    <meta charset="UTF-8" />
+    
+    <!-- Permite que la página se adapte según el dispositivo  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--  Título de la página (Inicio) -->
+    <title>Physy — Inicio</title>
+
+    <!-- Fuentes y CSS externo -->
+    <!--  Se carga la fuente de la página web (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!--  Se conecta el HTML con la hoja de estilos -->
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <!-- Se conecta el HTML con la hoja de scripts-->
+    <script src="./script.js" defer></script>
+  </head>
+
+  <!-- Cuerpo -->
+  <body>
+    <!-- Se define la cabecera del sitio-->
+    <header class="site-header" role="banner">
+      <!-- Contenedor interno para organizar los elementos del header -->
+      <div class="header-inner">
+        <!-- Logo del sitio web -->
+        <div class="brand">
+          <!-- PNG del logo -->
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <!-- Texto después del logo-->
+          <span class="name">Physy Adventures</span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav role="navigation" aria-label="Navegación principal">
+          <!-- Lista donde se guardarán los botones del menú de navegación-->
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link is-active" href="index.html" aria-current="page">
+                <!-- Los path dibujan los íconos en formato vectorial-->
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="explorar.html">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cuerpo principal de la página-->
+    <main class="page">
+      <!-- ====== Primera sección: Bienvenida a la página web ====== -->
+      <section class="intent-section">
+        <div class="intent-wrap">
+          <!-- Se agrega un formato de dos columnas-->
+          <div class="intent-cols">
+            <!-- Columna izquierda : Título y descripción -->
+            <div class="intent-text">
+              <!-- Título pequeño -->
+              <p class="intent-kicker">Sumérgete en la</p>
+              <h2 class="intent-title">
+                <!-- Título principal-->
+                <span class="line">Mecánica</span>
+                <span class="line">de Fluidos</span>
+              </h2>
+              <!-- Descripción -->
+              <p class="intent-desc">
+                <b> ¡Bienvenido a bordo!</b> <br />
+                Hoy te conviertes en un navegante que se embarga en una travesía única: descubrir los misterios de la
+                <b> mecánica de fluidos</b>. <br />
+                <br />
+
+                En este viaje surcarás mares cambiantes y visitarás islas llenas de secretos para develar los secretos
+                de los mares, ríos y vientos. <br />
+
+                <b>¿Listo para izar velas y comenzar la exploración? </b>
+              </p>
+            </div>
+
+            <!-- Columna derecha : Imagen descriptiva -->
+            <figure class="intent-fig" aria-label="Imagen ilustrativa">
+              <div class="ph-box">
+                <img
+                  src="Recursos/General/Imagen_hero.png" />
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separador en forma de ola -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
+
+      <!-- ====== Segunda sección: Aprendizajes esperados ====== -->
+      <section class="learn-section" aria-labelledby="learn-title">
+        <div class="learn-wrap">
+          <h2 id="learn-title" class="learn-heading">Al final de tu aventura aprenderás…</h2>
+
+          <div class="lc-viewport" aria-roledescription="carrusel">
+            <ul class="lc-track">
+              <!-- Slide 1 -->
+              <li class="lc-slide" aria-label="1 de 3">
+                <figure class="lc-card">
+                  <div class="lc-media">
+                    <img src="Recursos/General/Imagen_carrusel_1.png" alt="Introducción a la mecánica de fluidos" />
+                  </div>
+                  <figcaption class="lc-caption">
+                    <h3>Introducción a la mecánica de fluidos</h3>
+                    <p>Navega entre sólidos y fluidos, descubriendo cómo se comportan los mares y los vientos.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <!-- Slide 2 -->
+              <li class="lc-slide" aria-label="2 de 3">
+                <figure class="lc-card">
+                  <div class="lc-media">
+                    <img src="Recursos/General/Imagen_carrusel_2.png" alt="Presión y profundidad" />
+                  </div>
+                  <figcaption class="lc-caption">
+                    <h3>Presión y profundidad</h3>
+                    <p>Descubre como la presión del agua aumenta al descender, como un buzo en lo profundo.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <!-- Slide 3 -->
+              <li class="lc-slide" aria-label="3 de 3">
+                <figure class="lc-card">
+                  <div class="lc-media">
+                    <img src="Recursos/General/Imagen_carrusel_3.png" alt="Flotación" />
+                  </div>
+                  <figcaption class="lc-caption">
+                    <h3>Flotación</h3>
+                    <p>Descubre por qué algunos barcos navegan y otros se hunden.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+
+            <!-- Controles -->
+            <button class="lc-prev" aria-label="Anterior" title="Anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M15.5 19a1 1 0 0 1-.7-.3l-6-6a1 1 0 0 1 0-1.4l6-6a1 1 0 1 1 1.4 1.4L10.9 12l5.3 5.3A1 1 0 0 1 15.5 19z" />
+              </svg>
+            </button>
+            <button class="lc-next" aria-label="Siguiente" title="Siguiente">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.5 19a1 1 0 0 1-.7-1.7L13.1 12 7.8 6.7A1 1 0 0 1 9.2 5.3l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-.7.3z" />
+              </svg>
+            </button>
+
+            <div class="lc-dots" role="tablist" aria-label="Diapositivas"></div>
+          </div>
+        </div>
+
+        <!-- Ola de transición -->
+        <div class="wave-between" aria-hidden="true">
+          <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,100 L0,100 Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ===== Tercera sección: Botón de explorar ===== -->
+      <section class="cta-section">
+        <div class="cta-inner">
+          <h2 class="cta-title">¿Listo para empezar tu aventura?</h2>
+          <a href="explorar.html" class="cta-btn">Empieza a explorar</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

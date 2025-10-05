@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sección inicial de página ===== -->
+    <section class="topic-hero" data-component="island-hero">
+      <div class="topic-hero__wrap">
+        <!-- Botón para regresar a la página explorar -->
+        <div class="topic-hero__back">
+          <a class="btn btn--ghost" href="explorar.html">⟵ Regresar al puerto</a>
+        </div>
+
+        <!-- Doble columna: texto e imagen  -->
+        <div class="topic-hero__grid">
+          <!-- Columna texto -->
+          <header class="topic-hero__text">
+            <h1 class="topic-hero__title">Isla 1: Introducción a la mecánica de fluidos</h1>
+
+            <!-- Descripción -->
+            <div class="topic-hero__desc">
+              <p>
+                Es hora de zarpar. Dejas atrás la seguridad de la tierra firme, donde todo era predecible y te preparas
+                para enfrentar los mares cambiantes
+              </p>
+              <p>
+                En tierra firme, los objetos rígidos obedecían reglas claras y conocidas; ahora, al adentrarte en el
+                océano descubrirás que los <strong> líquidos </strong> y los <strong> gases </strong> siguen reglas
+                distintas, llenas de sorpresas y desafios.
+              </p>
+              <p>
+                Este es el inicio de tu viaje, aprender a diferenciar entre lo que se mantiene inmóvil y lo que fluye
+                sin cesar, entre la certeza de lo estático y la naturaleza dinámica de los <strong> fluidos </strong>.
+              </p>
+            </div>
+
+            <!-- Lo que aprenderás -->
+            <div class="topic-hero__learnbox">
+              <h2 class="topic-hero__learnbox-title">Lo que aprenderás</h2>
+              <ul class="topic-hero__bullets">
+                <li>Identificar las diferencias entre sólidos y fluidos.</li>
+                <li>Comprender el campo de estudio de la <em> mecánica de fluidos</em> y su clasificación</li>
+                <li>Visualizar las aplicaciones del estudio de los fluidos en las ciencias e ingenieria</li>
+              </ul>
+            </div>
+          </header>
+
+          <!-- Columna imagen  -->
+          <figure class="topic-hero__media">
+            <img src="Recursos/Primera_isla/Imagen_hero_1.png" width="900" height="1200" loading="eager" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título y subtítulo de la sección ===== -->
+    <h2 class="section-title">Introducción</h2>
+    <h3 class="section-title">Conociendo los fluidos</h3>
+
+    <!-- ===== Se presenta el contenido en dos columnas ===== -->
+    <section class="two-cols">
+      <!-- ===== Columna de texto ===== -->
+      <div class="two-cols__text">
+        <!-- ===== Bloque de narración ===== -->
+        <section class="narration-block">
+          <p>
+            Antes de zarpar de esta isla, encuentras una <strong> antigua carta de navegación</strong>. Sus símbolos
+            hablan de un mundo nuevo que debes comprender si quieres dominar los mares.
+          </p>
+        </section>
+
+        <!-- ===== Bloque de concepto  ===== -->
+        <section class="concept-block">
+          <h2>Definición: Fluido</h2>
+          <p>
+            Un <strong> fluido </strong> es como el mar que rodea tu barco: no tiene forma fija, se adapta al recipiente
+            o al espacio que lo contiene. Tanto los <strong> líquidos </strong> como los <strong> gases </strong> son
+            fluidos, pues sus partículas se mueven libremente, obedeciendo a fuerzas internas más débiles que las de los
+            sólidos.
+          </p>
+        </section>
+
+        Así como el agua toma la forma de tu barril o el aire llena la vela de tu navío, los fluidos siempre se adaptan
+        a su contenedor.
+
+        <!-- ===== Bloque de concepto  ===== -->
+        <section class="concept-block">
+          <h2>Definición: Mecánica de fluidos</h2>
+          <p>
+            La <strong> mecánica de fluidos </strong> es la rama de la física que estudia cómo se comportan los fluidos,
+            tanto en reposo como en movimiento, y cómo interactúan con los cuerpos que los contienen o atraviesan.
+          </p>
+        </section>
+      </div>
+
+      <div class="two-cols__image">
+        <img src="Recursos/Primera_isla/Imagen_I1_1.png" alt="Isla ilustrada" />
+      </div>
+    </section>
+
+    <!-- ===== Primer recurso ===== -->
+    <section class="bottle-note">
+      <div class="bottle-note__inner">
+        <!-- Icono -->
+        <div class="bottle-note__icon" aria-hidden="true">
+          <img src="Recursos/General/Botella.png" alt="" />
+        </div>
+
+        <h2 class="bottle-note__title"><em>Mensaje en una botella</em></h2>
+
+        <p class="bottle-note__desc">
+          Has encontrado una botella a la deriva. En su interior, otro navegante ha dejado un mensaje
+          <em>‘Si deseas continuar tu travesía, primero comprende qué son los fluidos y la mecánica que los rige" </em>
+        </p>
+
+        <a class="btn-bottle" href="https://youtu.be/G53gvVh230U" target="_blank" rel="noopener"> Abrir recurso </a>
+      </div>
+    </section>
+
+    <!-- ===== Separador 2 ===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título y subtítulo de la sección 2===== -->
+    <h2 class="section-title">Áreas de la mecánica de fluidos</h2>
+
+    <!-- ===== Bloque con ejemplos ===== -->
+    <section class="examples-block">
+      <h2>¿Cómo se clasifica la <strong> mecánica de fluidos</strong> ?</h2>
+      <div class="examples-grid">
+        <div class="example-card">
+          <img src="Recursos/Primera_isla/Imagen_I1_2.png" />
+          <p>
+            La <strong> estática de fluidos </strong> estudia los fluidos cuando están en equilibrio, como el agua
+            tranquila de un puerto o el aire sereno antes de una tormenta
+          </p>
+        </div>
+        <div class="example-card">
+          <img src="Recursos/Primera_isla/Imagen_I1_3.png" />
+          <p>
+            La <strong> dinámica de fluidos </strong> estudia los fluidos en movimiento, como las corrientes marinas que
+            guían tu travesía o el viento que hincha tus velas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Texto plano 1===== -->
+    <section class="plain-text">
+      <p class="para">
+        La <strong> hidráulica </strong> es la aplicación práctica de la mecánica de fluidos en la ingeniería. Es el
+        arte de aprovechar la fuerza del agua y otros fluidos para construir y operar máquinas.
+      </p>
+
+      <p>
+        <em>
+          Los antiguos constructores de molinos y canales ya conocían la hidráulica, pues usaban la corriente de los
+          ríos como energía para mover sus engranajes, tal como un capitán aprovecha la marea para dirigir su barco.</em
+        >
+      </p>
+    </section>
+
+    <!-- ===== Separador 3 ===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque final: Tesoro de la isla ===== -->
+    <section class="treasure-cta">
+      <div class="treasure-cta__inner">
+        <!-- Cofre -->
+        <div class="treasure-cta__icon" aria-hidden="true">
+          <img src="Recursos/General/Tesoro.png" alt="" />
+        </div>
+
+        <h2 class="treasure-cta__title">¡Has encontrado el tesoro de esta isla!</h2>
+        <p class="treasure-cta__desc">
+          Guarda tu hallazgo en la <strong>Bitácora</strong> y desbloquea pruebas al final del viaje.
+        </p>
+
+        <!-- Progreso -->
+        <div class="treasure-cta__progress" aria-hidden="true">
+          <div class="bar"><span style="width: 16%"></span></div>
+          <div class="label">Tesoros recolectados: <strong>1/6</strong></div>
+        </div>
+
+        <a class="btn-treasure" href="Bitacora.html" onclick="localStorage.setItem('item1','true')">
+          Guardar en Bitácora
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Separador 3 ===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Pie del tema  ===== -->
+    <section class="topic-end">
+      <div class="container">
+        <a class="btn btn--primary" href="explorar.html">⟵ Regresar al puerto</a>
+      </div>
+    </section>
+  </body>
+</html>

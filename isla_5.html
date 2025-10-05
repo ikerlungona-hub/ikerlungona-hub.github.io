@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo  -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sección inicial de página ===== -->
+    <section class="topic-hero" data-component="island-hero">
+      <div class="topic-hero__wrap">
+        <!-- Botón para regresar a la página explorar -->
+        <div class="topic-hero__back">
+          <a class="btn btn--ghost" href="Explorar.html">⟵ Regresar al puerto</a>
+        </div>
+
+        <!-- Doble columna: texto e imagen  -->
+        <div class="topic-hero__grid">
+          <!-- Columna texto -->
+          <header class="topic-hero__text">
+            <h1 class="topic-hero__title">Isla 5: El Principio De Arquímedes</h1>
+            <!-- Descripción -->
+            <div class="topic-hero__desc">
+              <p>
+                Tu travesía continúa y te lleva a aguas más profundas. La calma del mar te atrapa, relajándote y te
+                dejas llevar por la tranquilidad del momento, pero, esta calma se ve interrumpida cuando por suerte o
+                destino escuchas un crujido extraño: el casco del barco tiene una grieta a unos metros bajo la línea de
+                <strong>flotación</strong>. De inmediato, un chorro de agua comienza a entrar con fuerza, como si el
+                océano quisiera reclamar el barco. Alarmado, corres hacia el capitán para informarle de lo que está
+                pasando.
+              </p>
+            </div>
+
+            <!-- Lo que aprenderás -->
+            <div class="topic-hero__learnbox">
+              <h2 class="topic-hero__learnbox-title">Lo que aprenderás</h2>
+              <ul class="topic-hero__bullets">
+                <li>
+                  Comprender que todo objeto sumergido en un fluido recibe una <em>fuerza de empuje </em> hacia arriba.
+                </li>
+                <li>Entender por qué algunos cuerpos <em>flotan</em> y por qué otros se <em>hunden</em>.</li>
+                <li>Relacionar el <em>principio de Arquímedes</em> con casos reales</li>
+              </ul>
+            </div>
+          </header>
+
+          <!-- Columna imagen  -->
+          <figure class="topic-hero__media">
+            <img src="Recursos/Quinta_Isla/Imagen_hero_5.png" width="900" height="1200" loading="eager" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título y subtítulo de la sección ===== -->
+    <h2 class="section-title">Introducción</h2>
+    <h3 class="section-title">Problemas en la cubierta</h3>
+
+    <!-- ===== Bloque de audio ===== -->
+    <section class="audio-block" role="region">
+      <div class="audio-inner">
+        <span id="audio-title-1" class="audio-label">Voces del Mar</span>
+        
+        <audio controls preload="metadata" class="audio-player" aria-label="Reproducir: Voces del Mar">
+          <source src="Recursos/Quinta_isla/Dialogo_1.mp3" type="audio/mpeg" />
+          <source src="Recursos/audio/voces-del-mar.ogg" type="audio/ogg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </section>
+
+    <h3 class="section-title">Dato curioso</h3>
+    <section class="narration-block">
+      <p>
+        Supuestamente a <strong>Arquímedes</strong> se le pidió determinar si una corona hecha para el rey consistía de
+        oro puro. De acuerdo con la leyenda, él resolvió este problema al pesar la corona primero en aire y luego en
+        agua.
+      </p>
+      <p>¿Crees que funciono? ¿Cómo está relacionado con el problema de la grieta en el barco?</p>
+    </section>
+
+    <section class="plain-text">
+      <p>
+        El agua seguía entrando con fuerza. Los marineros y tú, siguiendo las órdenes del capitán, colocaron bombas de
+        achique que comenzaban a expulsar chorros de agua de vuelta al mar, pero, si aun entra agua, ¿Por qué el barco
+        no se hunde?.
+      </p>
+    </section>
+
+    <!-- ===== Bloque de audio ===== -->
+    <section class="audio-block" role="region">
+      <div class="audio-inner">
+        <span id="audio-title-2" class="audio-label">Voces del Mar</span>
+
+        <audio controls preload="metadata" class="audio-player" aria-label="Reproducir: Voces del Mar">
+          <source src="Recursos/Quinta_isla/Dialogo_2.mp3" type="audio/mpeg" />
+          <source src="Recursos/audio/voces-del-mar.ogg" type="audio/ogg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <h2 class="section-title">Fuerzas de flotación</h2>
+
+    <!-- ===== Bloque de concepto  ===== -->
+    <section class="info-block">
+      <h2>¿Por que las fuerzas de flotación son siempre ascendentes?</h2>
+      <p>
+        Analicemos un cilindro sumergido completamente en un fluido, con su eje orientado de forma vertical. El cilindro
+        experimenta fuerzas de <strong>presión</strong> del fluido en sus caras superior e inferior.
+      </p>
+
+      <div class="formula">\(P=\rho \cdot g\cdot h \)</div>
+      <p>
+        Como la cara inferior del cilindro está a mayor profundidad, experimenta una presión mayor que la cara superior.
+        Esta diferencia de presiones genera una <strong>fuerza</strong> neta hacia arriba.
+      </p>
+
+      <p>
+        La magnitud de esta fuerza neta, denominada <strong>fuerza de flotación</strong>, se calcula como la diferencia
+        entre las fuerzas ejercidas en ambas caras:
+      </p>
+
+      <div class="formula">\(F_{\text{flotación}}=F_{\text{inf}}-F_{\text{sup}}\)</div>
+    </section>
+
+    <!-- ===== Se presenta el contenido en dos columnas ===== -->
+    <section class="two-cols">
+      <!-- ===== Columna de texto ===== -->
+      <div class="two-cols__text">
+        <section class="concept-block">
+          <h2>Definición: Fuerza de flotación</h2>
+          <p>
+            La <strong> fuerza de flotación</strong> o <strong> fuerza boyante </strong> es la fuerza ascendente que un
+            fluido ejerce sobre un objeto sumergido en él.
+          </p>
+
+          <div class="formula">\( E = \rho_{\text{fluido}} \cdot g\cdot V_{\text{sumergido}}\)</div>
+          <p>
+            <strong> Donde: </strong>
+          </p>
+          <ul class="topic-hero__bullets">
+            <li>\(E \) es la <strong>fuerza de flotación</strong> que ejerce el agua sobre el objeto.</li>
+
+            <li>\( \rho \) es la <strong> densidad</strong> del fluido</li>
+
+            <li>\( g \) es la aceleración de la gravedad (9.81 m/s<sup>2</sup>).</li>
+            <li>\( V \) es el <strong>volumen de fluido desplazado</strong></li>
+          </ul>
+          <br />
+          <p>
+            La magnitud de la fuerza de flotación sobre un objeto siempre es igual al peso del fluido desplazado por el
+            objeto. Este resultado constituye el <strong>principio de Arquímedes </strong>.
+          </p>
+        </section>
+      </div>
+
+      <div class="two-cols__image">
+        <img src="Recursos/Quinta_isla/Imagen_I5_2_b.png" alt="Fuerza de flotación" />
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque con ejemplos ===== -->
+    <section class="examples-block">
+      <h2>Fenómenos que evidencian la fuerza de flotación</h2>
+      <div class="examples-grid">
+        <div class="example-card">
+          <img src="Recursos/Quinta_Isla/Imagen_I5_3.png" />
+          <p>
+            Cuando intentamos <strong>empujar una pelota bajo el agua</strong>, sentimos que algo la empuja hacia
+            arriba. Esto sucede porque la pelota está hecha de materiales más livianos que el agua (como plástico o
+            aire), y además tiene una forma que desplaza mucho líquido. Al tratar de sumergirla, el agua ejerce una
+            fuerza que la hace regresar a la superficie.
+          </p>
+        </div>
+        <div class="example-card">
+          <img src="Recursos/Quinta_Isla/Imagen_I5_1.png" />
+          <p>
+            Cuando entramos a una piscina o al mar, notamos que nuestro cuerpo se siente <strong>más ligero</strong>.
+            Incluso, muchas veces podemos flotar con poco esfuerzo. Esto ocurre porque el agua nos está empujando hacia
+            arriba con una fuerza (el empuje) que contrarresta parte de nuestro peso. Esta es la razón por la que es más
+            fácil levantar cosas pesadas bajo el agua. Aunque nuestro peso real no cambia, el peso "aparente" disminuye
+            gracias a esa fuerza ascendente del agua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="plain-text">
+      El capitán camina hacia el barandal del barco y empieza a observar un barril que está flotando en el mar. El
+      barril flota porque el empuje (\(F\)) que recibe del agua es mayor que su propio peso. Si el barril estuviera
+      vacío, desplaza poco volumen y se hunde más hasta que el empuje se iguala su peso. Así, el
+      <strong> principio de Arquímedes </strong> está determinado únicamente por la cantidad de fluido desplazado por el
+      objeto, no por otras propiedades del mismo.
+    </section>
+
+    <!-- ===== Primer recurso ===== -->
+    <section class="bottle-note">
+      <div class="bottle-note__inner">
+        <!-- Icono -->
+        <div class="bottle-note__icon" aria-hidden="true">
+          <img src="Recursos/General/Botella.png" />
+        </div>
+
+        <h2 class="bottle-note__title"><em>Mensaje en una botella</em></h2>
+
+        <p class="bottle-note__desc">
+          Encuentras otra botella a la deriva. En su interior lees:
+          <em
+            >"Navegante, así como Arquímedes resolvió el enigma de la corona del rey gracias a la flotación, tú también
+            puedes descubrir cómo la fuerza del agua revela secretos ocultos"</em
+          >. Pulsa el botón y aprende el principio que aún guía a los marinos en sus travesías.
+        </p>
+
+        <a
+          class="btn-bottle"
+          href="https://www.youtube.com/watch?v=XoF9s5ODsHI"
+          target="_blank"
+          rel="noopener">
+          Abrir recurso
+        </a>
+      </div>
+    </section>
+
+    <div class="narration-block">
+      <p>
+        A primera vista, puede parecer extraño que un enorme barco de metal no se hunda. Sin embargo, lo importante no
+        es solo el peso del barco, sino cómo está distribuido ese peso y cuánto agua desplaza. Un barco tiene una forma
+        que permite que desplace una gran cantidad de agua. Si la fuerza del agua desplazada (el empuje) es igual o
+        mayor al peso del barco, este flotará. Esto se basa en el <strong>Principio de Arquímedes </strong>, que dice
+        que cualquier objeto sumergido en un fluido recibe una fuerza hacia arriba igual al peso del líquido desplazado.
+      </p>
+    </div>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque final: Tesoro de la isla ===== -->
+    <section class="treasure-cta">
+      <div class="treasure-cta__inner">
+        <!-- Cofre -->
+        <div class="treasure-cta__icon" aria-hidden="true">
+          <img src="Recursos/General/Tesoro.png" alt="" />
+        </div>
+
+        <h2 class="treasure-cta__title">¡Has encontrado el tesoro de esta isla!</h2>
+        <p class="treasure-cta__desc">
+          Guarda tu hallazgo en la <strong>Bitácora</strong> y desbloquea pruebas al final del viaje.
+        </p>
+
+        <!-- Progreso -->
+        <div class="treasure-cta__progress" aria-hidden="true">
+          <div class="bar"><span style="width: 83%"></span></div>
+          <div class="label">Tesoros recolectados: <strong>5/6</strong></div>
+        </div>
+
+        <a class="btn-treasure" href="Bitacora.html" onclick="localStorage.setItem('item5','true')">
+          Guardar en Bitácora
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Pie del tema  ===== -->
+    <section class="topic-end">
+      <div class="container">
+        <a class="btn btn--primary" href="explorar.html">⟵ Regresar al puerto</a>
+      </div>
+    </section>
+  </body>
+</html>

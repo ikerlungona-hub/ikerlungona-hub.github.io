@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo  -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sección inicial de página ===== -->
+    <section class="topic-hero" data-component="island-hero">
+      <div class="topic-hero__wrap">
+        <!-- Botón para regresar a la página explorar -->
+        <div class="topic-hero__back">
+          <a class="btn btn--ghost" href="Explorar.html">⟵ Regresar al puerto</a>
+        </div>
+
+        <!-- Doble columna: texto e imagen  -->
+        <div class="topic-hero__grid">
+          <!-- Columna texto -->
+          <header class="topic-hero__text">
+            <h1 class="topic-hero__title">Isla 4: Presión atmosférica</h1>
+
+            <!-- Descripción -->
+            <div class="topic-hero__desc">
+              <p>
+                Después de las profundidades marinas, tu travesía te conduce hacia una isla distinta: aquí no domina el
+                mar, sino el cielo. Desde lejos observas cómo densas nubes envuelven la isla, ocultando parcialmente la
+                luz del sol. Al desembarcar, notas que el aire mismo parece más pesado, como si una
+                <strong> fuerza invisible</strong> presionara sobre tí.
+              </p>
+
+              <p>
+                Descubrirás que, así como el agua en el mar genera presión en las profundidades, el aire que envuelve
+                nuestro planeta ejerce una <strong> presión </strong> continua que sostiene fenómenos vitales para la
+                vida y la navegación.
+              </p>
+            </div>
+
+            <!-- Lo que aprenderás -->
+            <div class="topic-hero__learnbox">
+              <h2 class="topic-hero__learnbox-title">Lo que aprenderás</h2>
+              <ul class="topic-hero__bullets">
+                <li>Identificar qué es la <em> presión atmosférica </em> y cómo se genera.</li>
+                <li>
+                  Comprender la importancia de la <em>presión atmosférica</em> en fenómenos cotidianos y la navegación.
+                </li>
+                <li>Conocer los instrumentos y unidades de medida de la <em>presión atmosférica</em>.</li>
+              </ul>
+            </div>
+          </header>
+
+          <!-- Columna imagen  -->
+          <figure class="topic-hero__media">
+            <img src="Recursos/Cuarta_isla/Imagen_hero_4.png" width="900" height="1200" loading="eager" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título y subtítulo de la sección ===== -->
+    <h2 class="section-title">Introducción</h2>
+    <h3 class="section-title">Conociendo a la presión atmosférica</h3>
+    <!-- ===== Se presenta el contenido en dos columnas ===== -->
+    <section class="two-cols">
+      <!-- ===== Columna de texto ===== -->
+      <div class="two-cols__text">
+        <!-- ===== Bloque de párrafo plano ===== -->
+        <section class="plain-text">
+          <p class="para">
+            La <strong> atmósfera </strong> puede imaginarse como un vasto océano de aire, en cuyo fondo habitamos todos
+            los seres vivos. Como cualquier fluido, el aire ejerce <strong> presión </strong> tanto sobre la superficie
+            de la Tierra como sobre todos los cuerpos inmersos en él.
+          </p>
+        </section>
+
+        <!-- ===== Bloque de concepto  ===== -->
+        <section class="concept-block">
+          <h2>Definición: Presión atmosférica</h2>
+          <p>
+            La <strong> presión atmosférica </strong> es la presión que el aire de la atmósfera ejerce de manera
+            constante sobre todo lo que se encuentra en la superficie terrestre.
+          </p>
+        </section>
+
+        <!-- ===== Bloque de narración ===== -->
+        <section class="narration-block">
+          <p>
+            Mientras avanzas por la isla envuelta en nubes, descubres que la presión atmosférica se hace presente en
+            muchos fenómenos. Desde los cambios de clima que anuncian tormentas en alta mar hasta los ingeniosos
+            mecanismos de criaturas marinas para sobrevivir en su entorno, esta fuerza invisible guía tanto la
+            navegación como la vida en el océano.
+          </p>
+        </section>
+      </div>
+
+      <div class="two-cols__image">
+        <img src="Recursos/Cuarta_isla/Imagen_I3_3_b.png" alt="Isla ilustrada" />
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque con ejemplos ===== -->
+    <section class="examples-block">
+      <h2>Fenómenos que evidencian a la presión atmosférica</h2>
+      <div class="examples-grid">
+        <div class="example-card">
+          <img src="Recursos/Cuarta_isla/Imagen_I3_4.png" />
+          <p>
+            Los marineros han usado desde hace siglos el barómetro para medir la presión atmosférica y anticipar
+            tormentas. Una caída repentina en la presión del aire es señal de que se avecinan fuertes vientos y mal
+            clima en alta mar.
+          </p>
+        </div>
+        <div class="example-card">
+          <img src="Recursos/Cuarta_isla/Imagen_I3_5.png" />
+          <p>
+            Las ventosas de un pulpo funcionan gracias a la presión atmosférica. Cuando el pulpo expulsa el aire y crea
+            un vacío parcial en la ventosa, la presión externa del aire o del agua empuja con fuerza contra la
+            superficie, permitiéndole aferrarse con gran firmeza a rocas o al casco de un barco.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título de la sección ==== -->
+    <h2 class="section-title">Medición de la presión atmosférica</h2>
+
+    <!-- ===== Bloque de párrafo plano ===== -->
+    <section class="plain-text">
+      <p class="para">
+        Para comprender y medir esta fuerza, los navegantes han utilizado durante siglos el
+        <strong> barómetro </strong>, un instrumento que revela los cambios en la presión del aire y ayuda a anticipar
+        tormentas. La presión atmosférica se mide en distintas unidades: pascales (Pa), milímetros de mercurio (mmHg) y
+        atmósferas (atm). Al nivel del mar, su valor promedio es de aproximadamente 101,325 Pa, equivalentes a 760 mmHg
+        o 1 atm.
+      </p>
+    </section>
+
+    <!-- ===== Bloque de imágen ===== -->
+    <figure class="figure">
+      <img src="Recursos/Cuarta_isla/Imagen_I3_6.png" alt="Descripción de la imagen" />
+      <figcaption class="caption">Barómetro</figcaption>
+    </figure>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Primer recurso ===== -->
+    <section class="bottle-note">
+      <div class="bottle-note__inner">
+        <!-- Icono -->
+        <div class="bottle-note__icon" aria-hidden="true">
+          <img src="Recursos/General/Botella.png" alt="" />
+        </div>
+
+        <h2 class="bottle-note__title"><em>Mensaje en una botella</em></h2>
+
+        <p class="bottle-note__desc">
+          Entre la bruma aparece una botella con un mensaje: <em> "El océano de aire que nos rodea guarda secretos tan
+          poderosos como el mar" </em>. Descubre en esta presentación cómo actúa la presión atmosférica, los fenómenos que
+          provoca y los instrumentos con los que los navegantes la miden
+        </p>
+
+        <a
+          class="btn-bottle"
+          href="https://www.canva.com/design/DAG0t-_YbA4/rClXbX-dV_bjhUMXsel5iQ/view?utm_content=DAG0t-_YbA4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haca3e3e433"
+          target="_blank"
+          rel="noopener">
+          Abrir recurso
+        </a>
+      </div>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    
+    <!-- ===== Bloque final: Tesoro de la isla ===== -->
+    <section class="treasure-cta">
+      <div class="treasure-cta__inner">
+        <!-- Cofre -->
+        <div class="treasure-cta__icon" aria-hidden="true">
+          <img src="Recursos/General/Tesoro.png" alt="" />
+        </div>
+
+        <h2 class="treasure-cta__title">¡Has encontrado el tesoro de esta isla!</h2>
+        <p class="treasure-cta__desc">
+          Guarda tu hallazgo en la <strong>Bitácora</strong> y desbloquea pruebas al final del viaje.
+        </p>
+
+        <!-- Progreso -->
+        <div class="treasure-cta__progress" aria-hidden="true">
+          <div class="bar"><span style="width: 66%"></span></div>
+          <div class="label">Tesoros recolectados: <strong>4/6</strong></div>
+        </div>
+
+        <a class="btn-treasure" href="bitacora.html" onclick="localStorage.setItem('item4','true')">
+          Guardar en Bitácora
+        </a>
+      </div>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    
+    <!-- ===== Pie del tema  ===== -->
+    <section class="topic-end">
+      <div class="container">
+        <a class="btn btn--primary" href="explorar.html">⟵ Regresar al puerto</a>
+      </div>
+    </section>
+  </body>
+</html>

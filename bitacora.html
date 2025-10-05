@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Bitácora</title>
+
+    <!-- Fuentes y estilos  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="explorar.html">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Bitácora -->
+              <a class="nav-link is-active" aria-current="page">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 25" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero de Bitácora -->
+    <main class="page">
+      <section class="explorar-hero">
+        <div class="container">
+          <h1 class="explorar-title">Bitácora</h1>
+          <p class="explorar-sub">
+            Este cofre guarda los <strong> tesoros </strong> que has descubierto durante tu travesía. Cada objeto
+            representa un reto: al hacer clic podrás poner a prueba tus conocimientos y desbloquear nuevas recompensas.
+            Sigue explorando las islas para encontrar más tesoros y completar tu colección
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== Cofre (Se reutilizan los elementos de explorar) ===== -->
+      <section class="explorar-mapa" aria-labelledby="mapa-title">
+        <div class="container">
+          <div class="map-wrap">
+            <div class="chest-canvas">
+              <!-- Item 1 -->
+              <a class="chest-item item-1" id="item2" href="https://puzzel.org/en/matching-pairs/play?p=-OafFQzlvHeOKHW9S7Y0" target="_blank" rel="noopener" style="display: none">
+                <img src="Recursos/Bitacora/Item_1.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Diario del cápitan</strong>
+                  <p>Relaciona los conceptos de cohesión y adhesión con sus definiciones</p>
+                </div>
+              </a>
+
+              <!-- Item 2 -->
+              <a class="chest-item item-2" id="item1" href="https://interacty.me/projects/5bdcfa71f166128e"  target="_blank" rel="noopener" style="display: none">
+                <img src="Recursos/Bitacora/Item_2.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Mapa del tesoro</strong>
+                  <p>
+                    Resuelve las preguntas de mecánica de fluidos y descubre la ruta hacia el tesoro.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Item 3 -->
+              <a class="chest-item item-3" id="item3" href="https://puzzel.org/en/hangman/play?p=-Oaccz-PFvq6c0qevhft" target="_blank" rel="noopener" style="display: none">
+                <img src="Recursos/Bitacora/Item_3.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Acertijo de calavera</strong>
+                  <p>Adivina los conceptos de presión hidrostática antes de que se agote tu tiempo</p>
+                </div>
+              </a>
+
+              <!-- Item 4 -->
+              <a class="chest-item item-4" id="item4" href="https://es.educaplay.com/recursos-educativos/25751514-presion_atmosferica.html" style="display: none">
+                <img src="Recursos/Bitacora/Item_4.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Brujula navegante</strong>
+                  <p>Deja que la brújula te guíe y navega a través de este test sobre presión atmosférica</p>
+                </div>
+              </a>
+              
+              <!-- Item 5 -->
+              <a class="chest-item item-5" id="item5" href="https://puzzel.org/en/acrostic/play?p=-OabZ2lmLMVRyomNe2uu" target="_blank" rel="noopener" style="display: none">
+                <img src="Recursos/Bitacora/Item_5.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Telescopio</strong>
+                  <p>Con tu telescopio, observa las pistas y resuelve el crucigrama sobre el principio de Arquímedes</p>
+                </div>
+              </a>
+              
+              <!-- Item 6 -->
+              <a class="chest-item item-6" id="item6" href="https://puzzel.org/en/flash-cards/play?p=-OabHmbr332ZM7ZuubU1" target="_blank" rel="noopener" style="display: none">
+                <img src="Recursos/Bitacora/Item_6.png" />
+
+                <div class="chest-item-tip">
+                  <strong>Moneda de oro</strong>
+                  <p>Lanza la moneda y repasa con estas flashcards el principio de Pascal</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

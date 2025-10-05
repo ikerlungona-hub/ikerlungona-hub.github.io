@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Se incluye la libreria mathjax (Para usar fórmulas matemáticas) -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo  -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sección inicial de página ===== -->
+    <section class="topic-hero" data-component="island-hero">
+      <div class="topic-hero__wrap">
+        <!-- Botón para regresar a la página explorar -->
+        <div class="topic-hero__back">
+          <a class="btn btn--ghost" href="explorar.html">⟵ Regresar al puerto</a>
+        </div>
+
+        <!-- Doble columna: texto e imagen  -->
+        <div class="topic-hero__grid">
+          <!-- Columna texto -->
+          <header class="topic-hero__text">
+            <h1 class="topic-hero__title">Isla 3: Presión hidrostática</h1>
+
+            <!-- Descripción -->
+            <div class="topic-hero__desc">
+              <p>
+                Tras dejar atrás la laguna misteriosa, tu viaje te conduce a una isla rodeada de arrecifes de coral
+                llenos de color y peces que danzan en todas direcciones. El paisaje marino despierta en ti el deseo de
+                descubrir lo que se oculta bajo la superficie. Motivado, te colocas el equipo de buceo y desciendes
+                hasta las profundidades.
+              </p>
+
+              <p>
+                Con cada metro, sientes como la <strong> presión del agua </strong> aumenta sobre tu cuerpo. No es la
+                fuerza de las olas, sino el peso del agua que se acumula encima de tí. Una molestía en tus oídos te hace
+                pensar, ¿Qué ocurre con tu cuerpo al sumergirse? Comprender esta presión es clave para explorar con
+                seguridad el océano.
+              </p>
+            </div>
+
+            <!-- Lo que aprenderás -->
+            <div class="topic-hero__learnbox">
+              <h2 class="topic-hero__learnbox-title">Lo que aprenderás</h2>
+              <ul class="topic-hero__bullets">
+                <li>Identificar qué es la <em> presión </em> y cómo se calcula.</li>
+                <li>Comprender el concepto de <em> presión hidrostática </em> y los factores que la afectan.</li>
+                <li>Analizar cómo la <em> presión </em> afecta a los cuerpos sumergidos en un fluido.</li>
+              </ul>
+            </div>
+          </header>
+
+          <!-- Columna imagen  -->
+          <figure class="topic-hero__media">
+            <img src="Recursos/Tercera_Isla/Imagen_hero_3.png" width="900" height="1200" loading="eager" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Título de la sección ===== -->
+    <h2 class="section-title">Introducción</h2>
+
+    <!-- ===== Bloque de concepto===== -->
+    <section class="concept-block">
+      <h2>Definición: Presión</h2>
+      <p>
+        La <strong> presión </strong> se define como el cociente entre la fuerza aplicda y el área sobre la que actúa
+      </p>
+      <div class="formula">\( P = \frac{F}{A} \)</div>
+      <br />
+      Sus unidades en el Sistema Internacional son los <strong> pascales </strong> (Pa), equivalentes a un newton por
+      metro cuadrado (N/m<sup>2</sup>)
+    </section>
+
+    <!-- ===== Bloque de párrafo plano ===== -->
+    <section class="plain-text">
+      <p class="para">
+        Imagina un pez que apoya suavemente toda su aleta sobre tu mano: la fuerza se distribuye en un área amplia y
+        casi no lo sientes. Pero si ese mismo pez te roza con la punta de una espina, la misma fuerza se concentra en un
+        área muy pequeña, generando <strong> más presión </strong>.
+      </p>
+    </section>
+
+    <!-- ===== Bloque con pregunta===== -->
+    <section class="activity-section">
+      <div class="container">
+        <h2 class="activity-section__title">Ejercicio</h2>
+
+        <!-- Pregunta -->
+        <div class="activity-block">
+          <p>
+            Un marinero coloca una caja de 50 N de peso sobre una tabla de madera flotando en el mar. Si la base de la
+            caja tiene un área de 0.25 m<sup>2</sup>, ¿Qué <strong> presión </strong> ejerce sobre la tabla?
+          </p>
+
+          <button class="btn btn--primary toggle-solution" aria-expanded="false">Mostrar respuesta</button>
+
+          <!-- Oculto por defecto -->
+          <div class="solution-box" hidden>
+            <div class="formula">\( P = \frac{50 \ N}{0.25 \ m^2} = 200 \text{ Pascales}\)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    <h2 class="section-title">La presión hidrostática</h2>
+    <h3 class="section-title">El secreto de las profundidades</h3>
+
+    <!-- ===== Bloque de párrafo plano ===== -->
+    <section class="plain-text">
+      <p class="para">
+        Al sumergirte en el mar, experimentas un aumento de <strong> presión </strong> conforme desciendes en el agua.
+        Este fenómeno no es exclusivo de los humanos: todos los fluidos tanto líquidos como gases, ejercen presión sobre
+        los cuerpos que contienen o en los que se sumergen.
+      </p>
+    </section>
+
+    <!-- ===== Bloque con ejemplos ===== -->
+    <section class="examples-block">
+      <h2>Fenómenos que evidencian a la presión hidrostática</h2>
+      <div class="examples-grid">
+        <div class="example-card">
+          <img src="Recursos/Tercera_Isla/Imagen_I3_1.png" />
+          <p>
+            Los organismos que habitan en las zonas abisales del océano viven bajo
+            <strong> presiones extremas </strong>. Para sobrevivir, han desarrollado adaptaciones como membranas
+            celulares flexibles y estructuras internas sin cavidades de aire, que les permiten resistir el colapso.
+          </p>
+        </div>
+        <div class="example-card">
+          <img src="Recursos/Tercera_Isla/Imagen_I3_2.png" />
+          <p>
+            En junio de 2023, el sumergible Titan de Ocean Gate <strong> implosionó </strong> mientras exploraba los
+            restos del Titanic. A grandes profundidades, la presión del agua aumenta tanto que cualquier fallo en la
+            resistencia del casco puede provocar un colapso instantáneo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Bloque de concepto===== -->
+    <section class="concept-block">
+      <h2>Definición: Presión hidrostática</h2>
+      <p>
+        Cuando un cuerpo se encuentra sumergido en un fluido en reposo, la presión que soporta depende de la
+        profundidad. Esta se conoce como <strong> presión hidrostática </strong> y se expresa mediante la fórmula:
+      </p>
+      <div class="formula">\( P = \rho g h \)</div>
+      <br />
+      Donde:
+      <ul>
+        <li>\( \rho \) es la <strong> densidad del fluido </strong> (kg/m<sup>3</sup>)</li>
+        <li>\( g \) es la <strong> aceleración </strong> de la gravedad (m/s<sup>2</sup>)</li>
+        <li>\( h \) es la <strong> profundidad </strong> medida desde la superficie (m)</li>
+      </ul>
+    </section>
+
+    <!-- ===== Bloque con pregunta===== -->
+    <section class="activity-section">
+      <div class="container">
+        <h2 class="activity-section__title">Ejercicio</h2>
+
+        <!-- Pregunta -->
+        <div class="activity-block">
+          <p>
+            ¿Cuál es la presión que experimenta un buzo a 15 m de profundidad en el mar, considerando la densidad del
+            agua ρ=1000 kg/m<sup>3</sup> y \(g\) =9.8 m/s<sup>2</sup>?
+          </p>
+
+          <button class="btn btn--primary toggle-solution" aria-expanded="false">Mostrar respuesta</button>
+
+          <!-- Oculto por defecto -->
+          <div class="solution-box" hidden>
+            <div class="formula">\( P = (1000 kg/m^3) (9.8 m/s^2) (15 m) = 147 000 \text{ Pa} \)</div>
+            <br />
+            Esto equivale a 147 kPa, es decir, casi 1.5 veces la presión atmosférica. A esta profundidad, el cuerpo del
+            buzo soporta una presión significativa que debe compensar para poder ascender con seguridad.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Primer recurso ===== -->
+    <section class="bottle-note">
+      <div class="bottle-note__inner">
+        <!-- Icono -->
+        <div class="bottle-note__icon" aria-hidden="true">
+          <img src="Recursos/General/Botella.png" />
+        </div>
+
+        <h2 class="bottle-note__title"><em>Mensaje en una botella</em></h2>
+
+        <p class="bottle-note__desc">
+          La corriente trae hasta ti otra botella. En el pergamino se lee: <em>"Navegante, si deseas comprender cómo la
+          presión cambia con la profundidad, sumérgete en este recurso. Explora, mide y descubre cómo el mar empuja con
+          más fuerza cuanto más hondo viajas" </em>.
+        </p>
+
+        <a class="btn-bottle" href="https://phet.colorado.edu/sims/html/under-pressure/latest/under-pressure_all.html?locale=es" target="_blank" rel="noopener"> Abrir recurso </a>
+      </div>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    <h2 class="section-title">Conclusión</h2>
+
+    <!-- ===== Bloque de narración ===== -->
+    <section class="narration-block">
+      <p>
+        La <strong> presión hidrostática </strong> es una fuerza invisible pero siempre presente en el mundo submarino.
+        Desde la molestía en los oídos de un buzo hasta la supervivencia de criaturas abisales, comprender cómo actúa la
+        presión en función de la profundidad resulta fundamental. Con este conocimiento, los navegantes pueden
+        adentrarse en el océano no solo con curiosidad, sino también con respeto hacia la física que gobierna sus
+        profundidades.
+      </p>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    
+    <!-- ===== Bloque final: Tesoro de la isla ===== -->
+    <section class="treasure-cta">
+      <div class="treasure-cta__inner">
+        <!-- Cofre -->
+        <div class="treasure-cta__icon" aria-hidden="true">
+          <img src="Recursos/General/Tesoro.png" alt="" />
+        </div>
+
+        <h2 class="treasure-cta__title">¡Has encontrado el tesoro de esta isla!</h2>
+        <p class="treasure-cta__desc">
+          Guarda tu hallazgo en la <strong>Bitácora</strong> y desbloquea pruebas al final del viaje.
+        </p>
+
+        <!-- Progreso -->
+        <div class="treasure-cta__progress" aria-hidden="true">
+          <div class="bar"><span style="width: 50%"></span></div>
+          <div class="label">Tesoros recolectados: <strong>3/6</strong></div>
+        </div>
+
+        <a class="btn-treasure" href="Bitacora.html" onclick="localStorage.setItem('item3','true')">
+          Guardar en Bitácora
+        </a>
+      </div>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    
+    <!-- ===== Pie del tema  ===== -->
+    <section class="topic-end">
+      <div class="container">
+        <a class="btn btn--primary" href="explorar.html">⟵ Regresar al puerto</a>
+      </div>
+    </section>
+  </body>
+</html>

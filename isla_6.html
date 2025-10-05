@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+
+    <!-- Fuentes y estilos -->
+    <!-- Se incluye la libreria mathjax (Para usar fórmulas matemáticas) -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <!-- Logo -->
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Sección inicial de página ===== -->
+    <section class="topic-hero" data-component="island-hero">
+      <div class="topic-hero__wrap">
+        <!-- Botón para regresar a la página explorar -->
+        <div class="topic-hero__back">
+          <a class="btn btn--ghost" href="Explorar.html">⟵ Regresar al puerto</a>
+        </div>
+
+        <!-- Doble columna: texto e imagen  -->
+        <div class="topic-hero__grid">
+          <!-- Columna texto -->
+          <header class="topic-hero__text">
+            <h1 class="topic-hero__title">Isla 6: Principio de Pascal</h1>
+
+            <!-- Descripción -->
+            <div class="topic-hero__desc">
+              <p>
+                La grieta de tu barco está reparada y el mar no tuvo oportunidad de reclamar al barco, sigues tu viaje
+                sin ninguna complicación. Todo parece tranquilo, pero ahora los marineros enfrentan un nuevo reto:
+                <strong>mover un barril muy pesado </strong>lleno de agua que está atorado en la bodega.
+              </p>
+              <p>
+                Observas que los marineros intentan empujarlo entre varios, pero no logran moverlo. Entonces, se acerca
+                el capitán y les muestra un invento: una <strong> prensa hidráulica</strong> improvisada, hecha con dos
+                cilindros y aceite dentro de ellos.
+              </p>
+            </div>
+
+            <!-- Lo que aprenderás -->
+            <div class="topic-hero__learnbox">
+              <h2 class="topic-hero__learnbox-title">Lo que aprenderás</h2>
+              <ul class="topic-hero__bullets">
+                <li>Entender que hay detras del funcionamiento de ciertas máquinas que usamos en la vida cotidiana.</li>
+                <li>
+                  Entender que la <em> presión </em> no se disipa ni se concentra, sino que se distribuye de forma
+                  uniforme
+                </li>
+                <li>
+                  Aprender cómo, gracias al <em>Principio de Pascal</em>, se puede multiplicar la fuerza y levantar
+                  grandes pesos con una fuerza relativamente pequeña.
+                </li>
+              </ul>
+            </div>
+          </header>
+
+          <!-- Columna imagen  -->
+          <figure class="topic-hero__media">
+            <img src="Recursos/Sexta_isla/Imagen_hero_6.png" width="900" height="1200" loading="eager" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    <h2 class="section-title">Introducción</h2>
+
+    <section class="plain-text">
+      <p>
+        Uno de los principios básicos de la hidrostática es el denominado <strong>Principio de Pascal</strong> que dice
+        lo siguiente:
+      </p>
+    </section>
+
+    <section class="concept-block">
+      <h2>Definición: Principio de Pascal</h2>
+
+      <p>
+        La <strong> presión </strong> ejercida por un fluido incompresible y en equilibrio dentro de un recipiente de
+        paredes indeformables se transmite con igual intensidad en todas las direcciones y en todos los puntos del
+        fluido.
+      </p>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+    <h2 class="section-title">Una aplicación del principio de Pascal</h2>
+    <h3 class="section-title">La prensa hidráulica</h3>
+
+    <!-- ===== Bloque de audio ===== -->
+    <section class="audio-block" role="region">
+      <div class="audio-inner">
+        <span id="audio-title-3" class="audio-label">Voces del Mar</span>
+
+        <audio controls preload="metadata" class="audio-player" aria-label="Reproducir: Voces del Mar">
+          <source src="Recursos/Sexta_isla/Dialogo_3.mp3" type="audio/mpeg" />
+          <source src="Recursos/audio/voces-del-mar.ogg" type="audio/ogg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </section>
+
+    <!-- ===== Se presenta el contenido en dos columnas ===== -->
+    <section class="two-cols">
+      <!-- ===== Columna de texto ===== -->
+      <div class="two-cols__text">
+        <!-- ===== Bloque de concepto  ===== -->
+        <section class="concept-block">
+          <h2>¿Qué es una prensa hidráulica?</h2>
+          <p>
+            Imagina una palanca, pero en lugar de ser sólida, es líquida. Tú aplicas una fuerza pequeña en un área
+            reducida, y esa presión se transmite a través del aceite. Como resultado, en un pistón mucho más grande, la
+            fuerza se multiplica enormemente, permitiéndote mover o levantar objetos muy pesados. En esencia, es una
+            máquina que amplifica la fuerza utilizando un líquido <em>(generalmente aceite)</em> contenido en dos
+            cilindros interconectados.
+          </p>
+
+          <ul>
+            <li>Un émbolo pequeño (área \(A_1\)) donde aplicas una fuerza \(F_1\).</li>
+            <li>Un émbolo grande (área \(A_2\)) donde aplicas una fuerza \(F_2\).</li>
+          </ul>
+        </section>
+
+        <section class="concept-block">
+          <h2>¿Cómo funciona una prensa hidráulica?</h2>
+
+          <ol>
+            <li>Empuja el émbolo pequeño con una fuerza \(F_1\).</li>
+            <li>Esa presión viaja por el aceite y llega intacta al émbolo grande.</li>
+            <li>
+              El émbolo grande, por tener mayor área, entrega una fuerza amplificada \(F_2\) que levanta o comprime la
+              pieza
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="two-cols__image">
+        <img src="Recursos/Sexta_isla/Imagen_I6_1.png" alt="Isla ilustrada" />
+      </div>
+    </section>
+
+    <!-- ===== Bloque de audio ===== -->
+    <section class="audio-block" role="region">
+      <div class="audio-inner">
+        <span id="audio-title-4" class="audio-label">Voces del Mar</span>
+
+        <audio controls preload="metadata" class="audio-player" aria-label="Reproducir: Voces del Mar">
+          <source src="Recursos/Sexta_isla/Dialogo_4.mp3" type="audio/mpeg" />
+          <source src="Recursos/audio/voces-del-mar.ogg" type="audio/ogg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </section>
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <h2 class="section-title">¡Manos a la obra!</h2>
+    <h3 class="section-title">Resolviendo con el principio de pascal</h3>
+
+    <!-- ===== Bloque con actividad ===== -->
+    <section class="info-block">
+      <h2 class="info-title">¿Cuál es la fórmula del principio de Pascal?</h2>
+      <p>
+        Cuando se ejerce presión sobre un fluido (líquido o gas) que está confinado, esa presión se transmite por igual
+        en todas las direcciones y en todos los puntos del fluido.
+      </p>
+
+      <h2 class="info-title">Formula</h2>
+
+      <div class="formula">\( F_1 / A_1 = F_2 / A_2 \)</div>
+      <br />
+      Donde:
+      <ul>
+        <li>\( F \) es la <strong> fuerza </strong> aplicada a los pistones (N)</li>
+        <li>\( A \) es la <strong> área </strong> donde se aplica la fuerza (m<sup>2</sup>)</li>
+      </ul>
+    </section>
+
+    <section class="activity-section">
+      <div class="container">
+        <h3 class="activity-section__title">Actividades</h3>
+
+        <!-- Ejercicio 1 -->
+        <div class="activity-block">
+          <h3 class="activity-block__title">Ejercicio 1</h3>
+          <p>
+            Se desea elevar un cuerpo de 1500kg utilizando una elevadora hidráulica de plato grande circular de 90cm de
+            radio y plato pequeño circular de 10cm de radio. Calcula cuánta fuerza hay que hacer en el émbolo pequeño
+            para elevar el cuerpo.
+          </p>
+
+          <button class="btn btn--primary toggle-solution" aria-expanded="false">Mostrar solución</button>
+
+          <!-- Oculto por defecto -->
+          <div class="solution-box" hidden>
+            <p><strong>Resultado:</strong> 181,72N</p>
+          </div>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="activity-block">
+          <h3 class="activity-block__title">Ejercicio 2</h3>
+          <p>
+            Sobre el plato menor de una prensa se coloca una masa de 16kg. Calcula qué masa se podría levantar colocada
+            en el plato mayor, cuyo radio es el doble del radio del plato menor.
+          </p>
+
+          <button class="btn btn--primary toggle-solution" aria-expanded="false">Mostrar solución</button>
+
+          <!-- Oculto por defecto -->
+          <div class="solution-box" hidden>
+            <p><strong>Resultado:</strong> 64 kg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Primer recurso ===== -->
+    <section class="bottle-note">
+      <div class="bottle-note__inner">
+        <!-- Icono -->
+        <div class="bottle-note__icon" aria-hidden="true">
+          <img src="Recursos/General/Botella.png" />
+        </div>
+
+        <h2 class="bottle-note__title"><em>Mensaje en una botella</em></h2>
+
+        <p class="bottle-note__desc">
+          Las olas te entregan una nueva botella. En su mensaje se lee:
+          <em
+            >"En las profundidades, la presión viaja sin perder fuerza. Descubre en esta presentación cómo el principio
+            de Pascal explica desde el movimiento del agua hasta el poder de las máquinas hidráulicas"</em
+          >
+        </p>
+
+        <a
+          class="btn-bottle"
+          href="https://www.canva.com/design/DAG0307Mlqc/kk9rE53Nj1y3H0mVIiqXeg/view?utm_content=DAG0307Mlqc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7ec99db483"
+          target="_blank"
+          rel="noopener">
+          Abrir recurso
+        </a>
+      </div>
+    </section>
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque de narración ===== -->
+    <h2 class="section-title">Fin de la aventura</h2>
+
+    <section class="narration-block">
+      <p>
+        Tu aventura en el mundo de los fluidos llega a su fin. Con cada isla visitada, cada misterio desvelado y cada
+        principio dominado, has forjado una comprensión profunda de las fuerzas invisibles que rigen los mares. Desde la
+        <strong>cohesión</strong> que mantiene unida el agua, hasta la <strong>presión</strong> que se esconde en las
+        profundidades y la increíble capacidad de multiplicar <strong>fuerzas de Pascal</strong>, te has convertido en
+        un verdadero navegante, capaz de leer los secretos del océano.
+      </p>
+      <p>
+        Con la brújula de tu conocimiento apuntando hacia el horizonte, es hora de regresar a tierra firme, llevando
+        contigo no solo recuerdos, sino la sabiduría necesaria para afrontar cualquier mar que se presente en tu camino.
+        Ahora, cada ola, cada corriente y cada brisa serán un recordatorio de que has logrado dominar los misterios de
+        la <strong>mecánica de fluidos</strong>.
+      </p>
+    </section>
+
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Bloque final: Tesoro de la isla ===== -->
+    <section class="treasure-cta">
+      <div class="treasure-cta__inner">
+        <!-- Cofre -->
+        <div class="treasure-cta__icon" aria-hidden="true">
+          <img src="Recursos/General/Tesoro.png" alt="" />
+        </div>
+
+        <h2 class="treasure-cta__title">¡Felicidades por terminar tu aventura!</h2>
+        <p class="treasure-cta__desc">
+          Toma este objeto como trofeo por todo lo que has aprendido. ¡Sigue aprendiendo!
+        </p>
+
+        <!-- Progreso -->
+        <div class="treasure-cta__progress" aria-hidden="true">
+          <div class="bar"><span style="width: 100%"></span></div>
+          <div class="label">Tesoros recolectados: <strong>6/6</strong></div>
+        </div>
+
+        <a class="btn-treasure" href="Bitacora.html" onclick="localStorage.setItem('item6','true')">
+          Guardar en Bitácora
+        </a>
+      </div>
+    </section>
+    
+    <!-- ===== Separador===== -->
+    <hr class="section-divider-gradient" />
+
+    <!-- ===== Pie del tema  ===== -->
+    <section class="topic-end">
+      <div class="container">
+        <a class="btn btn--primary" href="explorar.html">⟵ Regresar al puerto</a>
+      </div>
+    </section>
+  </body>
+</html>

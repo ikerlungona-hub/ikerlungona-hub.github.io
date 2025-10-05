@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physy — Explorar</title>
+
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        
+        <a class="brand" href="index.html" aria-label="Ir a Inicio">
+          <img src="Recursos/General/Logo.png" alt="Logo de Physy" class="logo" width="244" height="244" />
+          <span class="name">Physy Adventures</span>
+        </a>
+
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="main-nav">
+            <li>
+              <a class="nav-link" href="index.html">
+                <span>Inicio</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10.5 2.6a2 2 0 0 1 3 0l7.5 7.2a1 1 0 0 1-1.4 1.4l-.6-.6V20a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-4.5a2.5 2.5 0 0 0-5 0V21a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-9.4l-.6.6A1 1 0 1 1 .6 9.8l7.6-7.2a2 2 0 0 1 2.3 0Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <!-- Activo en Explorar -->
+              <a class="nav-link is-active" href="explorar.html" aria-current="page">
+                <span>Explorar</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.7 6.3-3 7.2a1 1 0 0 1-.6.6l-7.2 3a.5.5 0 0 1-.6-.6l3-7.2a1 1 0 0 1 .6-.6l7.2-3a.5.5 0 0 1 .6.6ZM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="bitacora.html">
+                <span>Bitácora</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 4h12M8 10h8M8 14h8M8 18h6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero de Explorar -->
+    <main class="page">
+      <section class="explorar-hero">
+        <div class="container">
+          <h1 class="explorar-title">Explorar</h1>
+          <p class="explorar-sub">
+            Aquí comienza tu viaje a través del mundo de la <strong> mecánica de fluidos</strong>. Cada isla representa
+            un nuevo descubrimiento: desde entender que son los fluidos, hasta revelar los principios que explican por
+            qué los barcos flotan y cómo se transmite la presión. <br />
+            Navega a tu propio ritmo, haz clic en las islas y sumérgete en cada tema.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== Mapa de exploración ===== -->
+      <section class="explorar-mapa" aria-labelledby="mapa-title">
+        <div class="container">
+          <h2 id="mapa-title" class="sr-only">Mapa de islas</h2>
+          <div class="map-wrap">
+            <div class="map-canvas">
+
+              <!-- Isla 1 — Introducción -->
+              <a class="isla isla-1" href="isla_1.html" aria-label="Isla de la introducción">
+                <img src="Recursos/Explorar/Isla_1.png" alt="Isla de la introducción" />
+                <span class="isla-label">Introducción</span>
+
+                <div class="isla-tip">
+                  <strong>El inicio de la aventura</strong>
+                  <p>Descubre qué son los fluidos, en qué se diferencian de los solidos y su clasificación</p>
+                </div>
+              </a>
+
+              <!-- Isla 2 — Cohesión y adhesión -->
+              <a class="isla isla-2" href="isla_2.html" aria-label="Isla de la cohesión y la adhesión">
+                <img src="Recursos/Explorar/Isla_2.png" alt="Isla de la cohesión y la adhesión" />
+                <span class="isla-label">Cohesión y adhesión</span>
+
+                <div class="isla-tip">
+                  <strong>Terrenos misteriosos</strong>
+                  <p>
+                    Aprende como la cohesión y la adhesión explican fenómenos como la capilaridad y tensión superficial
+                  </p>
+                </div>
+              </a>
+
+              <!-- Isla 3 - Presión hidrostática -->
+              <a class="isla isla-3" href="isla_3.html" aria-label="Isla 3">
+                <img src="Recursos/Explorar/Isla_3.png" alt="Isla 3" />
+                <span class="isla-label">Presión hidrostática</span>
+
+                <div class="isla-tip">
+                  <strong>Sumergete en las profundidades</strong>
+                  <p>Comprende como la presión aumenta con la profundidad y su importancia en el mundo acuático</p>
+                </div>
+              </a>
+
+              <!-- Isla 4 — Presión atmosférica -->
+              <a class="isla isla-4" href="isla_4.html" aria-label="Isla 4">
+                <img src="Recursos/Explorar/Isla_4.png" alt="Isla 4" />
+                <span class="isla-label">Presión atmosférica</span>
+
+                <div class="isla-tip">
+                  <strong>El peso invisible</strong>
+                  <p>Descubre como la atmósfera ejerce fuerza sobre nosotros y cómo se mide esta presión</p>
+                </div>
+              </a>
+
+              <!-- Isla 5 — Principio de Arquímedes -->
+              <a class="isla isla-5" href="isla_5.html" aria-label="Isla 5">
+                <img src="Recursos/Explorar/Isla_5.png" alt="Isla 5" />
+                <span class="isla-label">Principio de Arquímedes</span>
+
+                <div class="isla-tip">
+                  <strong>Secretos que flotan</strong>
+                  <p>Entiende por qué los cuerpos se hunden o flotan gracias al empuje de los fluidos</p>
+                </div>
+              </a>
+
+              <!-- Isla 6 — Principio de Pascal -->
+              <a class="isla isla-6" href="isla_6.html" aria-label="Isla 6">
+                <img src="Recursos/Explorar/Isla_6.png" alt="Isla 6" />
+                <span class="isla-label">Principio de Pascal</span>
+
+                <div class="isla-tip">
+                  <strong>La fuerza que se multiplica</strong>
+                  <p>Explora cómo una presión aplicada en un fluido se transmite en todas direcciones</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
